@@ -6,7 +6,7 @@ public partial class View_data : ContentPage
 		InitializeComponent();
 	}
 
-    protected override async void OnAppearing() {
+    protected override void OnAppearing() {
         base.OnAppearing();
 
         image.Source=ImageSource.FromStream(() => new MemoryStream(Page_list_people.temp_photo));
