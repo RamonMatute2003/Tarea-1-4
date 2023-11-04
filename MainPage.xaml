@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_1_4.MainPage">
+
+    <StackLayout >
+        <Image VerticalOptions="Start" Margin="10" x:Name="photo" WidthRequest="100" HeightRequest="200" Background="BLACK"/>
+        <Entry VerticalOptions="Start" Margin="10" Keyboard="Text" Placeholder="Indique su nombre" x:Name="txt_names"></Entry>
+        <Entry Margin="10" Keyboard="Text" Placeholder="Indique su descripcion" x:Name="txt_description"></Entry>
+        <Button Margin="10" x:Name="btn_save" Text="Procesar" Clicked="save"></Button>
+        <Button Margin="10" x:Name="btn_photo" Text="Capturar imagen" Clicked="btn_photo_Clicked"></Button>
+        <Button Margin="10" Text="Lista" Clicked="view_list"></Button>
+    </StackLayout>
+</ContentPage>
